@@ -34,3 +34,4 @@ def differentiate(expr: str) -> str:
                 
                 
              
+#simple differentation by the power rule-for x^1, x^-y, x^y, x^0 
