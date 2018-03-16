@@ -1,0 +1,11 @@
+def calculate_heat(d: dict) -> int:
+    '''
+    '''
+    PI = 4*3.141592653
+    JOU = 4 
+    lst = list(d.values())
+    new_lst = []
+    for i in lst:
+        m = ((((i[0]**2)*PI)/2)*JOU)*i[1]
+        new_lst.append(m)
+    return round(sum(new_lst))
