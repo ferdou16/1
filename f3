@@ -1,0 +1,13 @@
+def is_balanced(lst: list) -> bool:
+    '''
+    '''
+    new_lst = []
+    if (lst.count('C') == lst.count('S')) and (lst[0] == 'C'):
+        for char in lst:
+            if char == 'C':
+                new_lst.append(char)
+            elif char == 'S':
+                new_lst.pop()
+        return (len(new_lst) == 0)
+    else:
+        return False
